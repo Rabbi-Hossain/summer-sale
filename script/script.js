@@ -35,7 +35,7 @@ function handlerCopunFun() {
         const productPrice = document.getElementById('total-price-id').innerText
         const productPriceNumber = parseFloat(productPrice).toFixed(2)
         console.log(productPriceNumber)
-        const discountPercentageDecimal = 40 / 100
+        const discountPercentageDecimal = 20 / 100
         const discountListPrice = discountPercentageDecimal * productPriceNumber
         discountId.innerText = discountListPrice.toFixed(2)
         console.log(discountListPrice)
