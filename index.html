@@ -19,28 +19,28 @@
 
 <body class="list-style  bg-[#F8F8F8]">
   <!-- section nav -->
-  <nav class="bg-[#F9F6E2] w-4/5 mx-auto mt-10 flex">
+  <nav class="bg-[#F9F6E2] w-[400px] md:w-4/5 mx-auto mt-10 md:flex">
     <div class="text-center mt-32 lg:mt-72 flex-1">
       <h1 class="font-semibold md:xl lg:text-3xl">---SALE FEVER---</h1>
       <p class="lg:text-4xl font-bold mt-5">Purchase TK 200 or <br> above & <span class="text-[#E527B2]">get 20%
           off</span></p>
       <div class="mt-10">
         <p class="inline-block font-semibold text-xl">Use Promo Code</p>
-        <button class="bg-[#E527B2] p-2 text-xl rounded-lg ml-5">SELL200</button>
+        <button class="bg-[#E527B2] p-2 text-xl rounded-lg md:ml-5">SELL200</button>
       </div>
     </div>
-    <div class=" flex-1">
-      <img src="images/Summer 1.png" alt="">
+    <div class="flex-1">
+      <img class="w-[300px] md:w-full" src="images/Summer 1.png" alt="">
     </div>
   </nav>
 
   <!-- main section -->
   <main class="mt-20">
     <h2 class="text-center font-semibold text-3xl mb-10">Product sale</h2>
-    <div class="max-w-screen-2xl mx-auto flex gap-4">
-      <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-4">
+    <div class=" md:max-w-screen-2xl mx-auto md:flex gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  md:w-9/12">
         <!-- card-1 -->
-        <div onclick="firstCard()" id="first-card" class="card w-[380px] bg-base-100 shadow-xl">
+        <div onclick="handleFunc(this)" id="first-card" class="card bg-base-100 shadow-xl">
           <figure><img src="images/prod1.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
 
@@ -53,15 +53,12 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
 
-            <h2 id="first-title" class="font-semibold text-lg">K. Accessories</h2>
-            <p><span id="first-card-field-id">39.00</span>TK</p>
-            <div class="card-actions justify-center">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+            <h2 id="first-title-id" class="font-semibold text-lg">K. Accessories</h2>
+            <p><span id="first-price-id">39.00</span>TK</p>
           </div>
         </div>
         <!-- card-2 -->
-        <div id="second-card" class="card w-[380px] bg-base-100 shadow-xl">
+        <div id="second-card" onclick="handleFunc(this)" class="card  bg-base-100 shadow-xl">
           <figure><img src="/images/prod2.png" alt="Shoes" /></figure>
           <div class="card-body">
 
@@ -74,14 +71,11 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
             <h2 id="second-card-id" class="text-center">R.SummerSale</h2>
-            <p class="text-center"><span id="second-price-id">25</span>TK</p>
-            <div class="card-actions justify-center">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+            <p class="text-center"><span id="second-price-id">25.00</span>TK</p>
           </div>
         </div>
         <!-- card-3 -->
-        <div class="card w-[380px] bg-base-100 shadow-xl">
+        <div onclick="handleFunc(this)" class="card bg-base-100 shadow-xl">
           <figure><img src="/images/prod3.png" alt="Shoes" /></figure>
           <div class="card-body">
 
@@ -93,15 +87,12 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+            <h2 class="text-center">Home Cooker</h2>
+            <p class="text-center"><span id="third-price-id">40.00</span>TK</p>
           </div>
         </div>
         <!-- card-4 -->
-        <div class="card w-[380px] bg-base-100 shadow-xl">
+        <div onclick="handleFunc(this)" class="card bg-base-100 shadow-xl">
           <figure><img src="/images/prod4.png" alt="Shoes" /></figure>
           <div class="card-body">
 
@@ -113,15 +104,12 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+            <h2 class="text-center">Sports Back Cap</h2>
+            <p class="text-center"><span id="third-price-id">49.00</span>TK</p>
           </div>
         </div>
         <!-- card-5 -->
-        <div class="card w-[380px] bg-base-100 shadow-xl">
+        <div onclick="handleFunc(this)" class="card  bg-base-100 shadow-xl">
           <figure><img src="/images/prod5.png" alt="Shoes" /></figure>
           <div class="card-body">
 
@@ -133,15 +121,12 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+            <h2 class="text-center">Full Jersey Set</h2>
+            <p class="text-center"><span id="third-price-id">69.00</span>TK</p>
           </div>
         </div>
         <!-- card-6 -->
-        <div class="card w-[380px] bg-base-100 shadow-xl">
+        <div onclick="handleFunc(this)" class="card  bg-base-100 shadow-xl">
           <figure><img src="/images/prod6.png" alt="Shoes" /></figure>
           <div class="card-body">
 
@@ -153,27 +138,52 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+            <h2 class="text-center">Sports cates</h2>
+            <p class="text-center"><span id="third-price-id">159.00</span>TK</p>
           </div>
         </div>
 
       </div>
 
-      <div class="flex-1 w-[400px] ml-2 ">
-        <h1>Have coupon</h1>
-        <input class="border-2 p-2 border-black" type="text" placeholder="coupon code "><button
-          class="p-3 rounded-lg bg-[#E527B2]">apply</button>
+      <div class="ml-2 px-4">
+        <div class="p-4  bg-base-100 ">
+          <h1 class="text-center mb-2 text-2xl">Have coupon?</h1>
+          <input id="coupon-field" class="border-2 py-2 border-black" type="text" placeholder="coupon code ">
+          <button onclick="handlerCopunFun()" class="p-3 rounded-lg bg-[#E527B2]">apply
+          </button>
+        </div>
 
-          <!-- card add -->
-          <div class="mt-5 bg-base-100 p-5 space-y-4">
-            <h3 class="font-bold text-2xl">Total Price:<span id="total-id"></span></h3>
-            <h3 class="font-bold text-2xl">Discount:</h3>
-            <h3 class="font-bold text-2xl">Total:</h3>
+        <!-- card add -->
+        <div class="mt-5 bg-base-100 p-5 space-y-4">
+          <div id="select-card-id">
+
           </div>
+          <hr>
+          <h3 class="font-bold text-2xl">Total Price: <span id="total-price-id"></span>tk</h3>
+          <h3 class="font-bold text-2xl">Discount: <span id="discound-id"></span>tk</h3>
+          <h3 class="font-bold text-2xl">Total: <span id="total-value-id"></span>tk</h3>
+        </div>
+        <!--  -->
+        <!-- make parches -->
+        <!-- Open the modal using ID.showModal() method -->
+        <hr>
+
+        <button class="btn btn-secondary w-full " onclick="my_modal_1.showModal()">Make Purchase</button>
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box text-center">
+            <div class="ml-32">
+              <img class="w-[200px] mr-12" src="tick 1.jpg" alt="">
+            </div>
+            <h3 class="text-lg font-bold">Congratulations</h3>
+            <p class="py-4">Your Purchase the product</p>
+            <div class="">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button  class="btn btn-secondary">Go Home</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </div>
   </main>
@@ -181,7 +191,8 @@
   <footer>
 
   </footer>
-  <script src="index.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/utiliti.js"></script>
 </body>
 
 </html>
