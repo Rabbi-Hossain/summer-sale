@@ -1,1 +1,1 @@
-ad-plot.surge.sh
+surge deploy: fortunate-lumber.surge.sh
